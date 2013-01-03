@@ -42,7 +42,8 @@ $THEME->sheets = array(
     'ie7',//ie7 fixes for moodle 2.3 and newer. make is usable in ie7, not pretty
     'extra',//contains custom css from the theme user settings
     'quiz',//quiz module styling
-    'moddata'//data module styling
+    'moddata',//data module styling
+	'epicdemo-custom' /* JoeB addition -  add the Epic theme stylesheet */
 );
 
 //the sheet editor-styling is disabled untill it fully supports all editor options

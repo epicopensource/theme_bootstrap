@@ -1,0 +1,83 @@
+/* JoeB changes */
+ol.commentlist, ol.commentlist li {
+	background-color: #808080 !important;
+}
+#main p.meta {
+	color: #555 !important;
+} 
+ 
+body {
+	background: url("https://d3jpl91pxevbkh.cloudfront.net/epic/image/upload/v1341574576/pattern_2_380_normal.jpg") repeat scroll 0 0 transparent;
+}
+
+/* Moodle specific fixes */
+.block {
+	color: #555 !important;
+}
+ 
+.block_navigation .block_tree .tree_item {
+	color: #555 !important;
+}
+ 
+.block_settings .block_tree .tree_item {
+	color: #555 !important;
+}
+
+#page-header {
+	background-color: #414042;
+	color: #fff;
+}
+
+#page-header-wrapper {
+	background-image: url('http://epiclearninggroup.com/uk/wp-content/themes/epic/images/epic-logo.png');
+	background-repeat: no-repeat;
+	height: 90px;
+}
+
+.headermain {
+	font-size: 0px !important; /* display background logo instead of title text */
+	display: none !important;
+}
+
+.navbar {
+	clear:none;
+	margin-top: 31px;
+}
+
+input, button, select, textarea {
+	font-family: "Arial",Helvetica,sans-serif !important;
+}
+
+.rememberpass {
+	display:inline-block;
+	margin-top:10px;
+}
+
+.rememberpass label{
+	display:inline-block;
+}
+
+.rememberusername {
+	display:inline-block;
+}
+
+.breadcrumb {
+	margin-left:80px !important;
+	margin-right:10px !important;
+	margin-top:-27px !important;
+	margin-bottom: 0px !important;
+}
+
+.navbutton {
+	margin-right: 10px;
+	margin-top: 16px;
+}
+
+.navbar-fixed-top {
+	margin-top: 0px !important;
+}
+
+#singleimage {
+    height: 100% !important;
+    width: 100% !important;
+}

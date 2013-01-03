@@ -34,8 +34,16 @@ $doctype = $OUTPUT->doctype() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta name="description" content="<?php p(strip_tags(format_text($SITE->summary, FORMAT_HTML))) ?>" />
+	
+	<!-- 
+	JoeB - added viewport tag below to ensure that mobile devices render the bootstrap pages at the correct pixel resolution;
+	without this tag, the responsive design features do not always work properly on iPhones, etc...
+	-->
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
     <?php echo $OUTPUT->standard_head_html() ?>
     <?php include($CFG->dirroot . "/theme/bootstrap/layout/google_analytics.php"); ?>
 </head>
