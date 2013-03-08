@@ -907,56 +907,6 @@
   .carousel-caption {
     position: static;
   }
-  
-  /* JoeB fix to remove admin nav sideblock on phones and other mobile specific tweaks to the layout */
-	html {
-		float: left;
-		overflow: auto;
-	}
-	body {
-		overflow: auto;
-	}
-	.row-fluid .span3 {
-		display:none !important;
-	}
-	.navbar .nav .nav {
-		display:none !important;
-	}
-	.navbutton, .completionprogress {
-		display:none !important;
-	}
-	#page-footer .helplink, #page-footer .purgecaches {
-		display:none !important;
-	}
-	#page-header {
-		margin-top:0px !important;
-	}
-	.coursebox .info {
-		width: 100% !important;
-	}
-	.coursebox .summary {
-		width: 100% !important;
-	}
-	.coursebox {
-		margin-bottom:0px !important;
-	}
-	.loginpanel h2 {
-		line-height: 1 !important;
-	}
-	.filemanager-toolbar {
-		margin: 5px !important;
-	}
-	.ffilepicker {
-		margin-left: 50px !important;
-	}
-	.logininfo {
-		/*
-		text-align: right;
-		width:150px;
-		*/
-		display: none !important;
-	}
-  /* end JoeB changes */
 }
 
 @media (max-width: 979px) {

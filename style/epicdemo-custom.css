@@ -1,4 +1,3 @@
-/* JoeB changes */
 ol.commentlist, ol.commentlist li {
 	background-color: #808080 !important;
 }
@@ -10,7 +9,11 @@ body {
 	background: url("https://d3jpl91pxevbkh.cloudfront.net/epic/image/upload/v1341574576/pattern_2_380_normal.jpg") repeat scroll 0 0 transparent;
 }
 
-/* Moodle specific fixes */
+#page, #login-page {
+	margin: auto;
+    max-width: 1024px;
+}
+
 .block {
 	color: #555 !important;
 }
@@ -23,12 +26,13 @@ body {
 	color: #555 !important;
 }
 
-#page-header {
+#page-header, #login-page-header {
 	background-color: #414042;
 	color: #fff;
+	margin: 0px;
 }
 
-#page-header-wrapper {
+#page-header-wrapper, #login-page-header-wrapper {
 	background-image: url('http://epiclearninggroup.com/uk/wp-content/themes/epic/images/epic-logo.png');
 	background-repeat: no-repeat;
 	height: 90px;
@@ -41,7 +45,18 @@ body {
 
 .navbar {
 	clear:none;
-	margin-top: 31px;
+	
+}
+
+.navbar-inner {
+	background-color:#fff;
+	background-image:none;
+	box-shadow:none !important;
+	border-width:0px !important;
+}
+
+.navbar-fixed-top {
+	position:relative;
 }
 
 input, button, select, textarea {
@@ -62,10 +77,10 @@ input, button, select, textarea {
 }
 
 .breadcrumb {
-	margin-left:80px !important;
-	margin-right:10px !important;
-	margin-top:-27px !important;
-	margin-bottom: 0px !important;
+	margin-top:10px;
+	margin-bottom:0px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .navbutton {
@@ -73,11 +88,108 @@ input, button, select, textarea {
 	margin-top: 16px;
 }
 
+.navbar .navbutton {
+	display:none;
+}
+
 .navbar-fixed-top {
 	margin-top: 0px !important;
+	z-index: 0;
 }
 
 #singleimage {
     height: 100% !important;
     width: 100% !important;
+}
+
+.loginpanel {
+	background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px 4px 4px 4px;
+	padding-top: 20px;
+}
+
+.course-content {
+	background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px 4px 4px 4px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+.coursebox {
+	width:auto;
+}
+
+.span9 {
+	background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 12px;
+}
+
+@media (max-width: 767px) {
+
+   /* Mobile specific tweaks to the layout */
+   
+	html {
+		float: left;
+		overflow: auto;
+	}
+	body {
+		overflow: auto;
+	}
+	.row-fluid .span3 {
+		display:none !important;
+	}
+	.navbar .nav .nav {
+		display:none !important;
+	}
+	.navbutton, .completionprogress {
+		display:none !important;
+	}
+	#page-footer .helplink, #page-footer .purgecaches {
+		display:none !important;
+	}
+	#page-header {
+		margin-top:0px !important;
+	}
+	.coursebox .info {
+		width: 100% !important;
+	}
+	.coursebox .summary {
+		width: 100% !important;
+	}
+	.coursebox {
+		margin-bottom:0px !important;
+	}
+	.loginpanel h2 {
+		line-height: 1 !important;
+	}
+	.filemanager-toolbar {
+		margin: 5px !important;
+	}
+	.ffilepicker {
+		margin-left: 50px !important;
+	}
+	.logininfo {
+		display: none !important;
+	}
+	.breadcrumb {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	/* end mobile tweaks */
+
+}
+
+/* JoeB - fix for the calendar block overrunning it's boundaries on tablets */
+@media (max-width: 1024px) {
+
+	.block_calendar_month .content {
+		font-size: 11px;
+	}
 }

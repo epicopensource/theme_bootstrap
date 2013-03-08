@@ -96,7 +96,7 @@ $THEME->layouts = array(
         'defaultregion' => 'side-pre',
     ),
     'frontpage' => array(
-        'file' => 'general.php',
+        'file' => 'frontpage.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
          'options' => array('nonavbar'=>true),
@@ -118,7 +118,7 @@ $THEME->layouts = array(
         'defaultregion' => 'side-pre',
     ),
     'login' => array(
-        'file' => 'general.php',
+        'file' => 'login.php',
         'regions' => array(),
         'options' => array('langmenu'=>true),
         'options' => array('nonavbar'=>true,'noheader'=>true),

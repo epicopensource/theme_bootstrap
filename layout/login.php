@@ -51,11 +51,14 @@ $doctype = $OUTPUT->doctype() ?>
 <body id="<?php p($PAGE->bodyid) ?>" class="<?php p($PAGE->bodyclasses.' '.join(' ', $bodyclasses)) ?>">
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<div id="page">
 
-<?php if ($hasheader) { ?>
+
+
+<div id="login-page">
+
+
 <!-- START OF HEADER -->
-    <div id="page-header">
+    <div id="login-page-header">
 		<div id="page-header-wrapper" class="wrapper clearfix">
 		    <?php if (empty($PAGE->theme->settings->logo_url)) {?>
 	        <h1 class="headermain"><?php echo $PAGE->heading ?></h1>
@@ -77,7 +80,7 @@ $doctype = $OUTPUT->doctype() ?>
     </div>
 
 <!-- END OF HEADER -->
-<?php } ?>
+
 
 <?php if ($hascustommenu) { ?>
 <div id="custommenuwrap"><div id="custommenu"><?php echo $custommenu; ?></div></div>
@@ -91,7 +94,7 @@ $doctype = $OUTPUT->doctype() ?>
 <?php } ?>
 
 <!--  BOOTSTRAP RESPONSIVE -->
-<div id="page-content-wrapper" class="wrapper clearfix">
+<div id="login-page-content-wrapper" class="wrapper clearfix">
 <div id="page-content" class="row-fluid">
 
 
@@ -122,7 +125,7 @@ $doctype = $OUTPUT->doctype() ?>
 <!--  END BOOTSTRAP RESPONSIVE -->
 
 <!-- START OF FOOTER -->
-    <div id="page-footer" class="wrapper">
+    <div id="login-page-footer" class="wrapper">
         <p class="helplink">
         <?php echo page_doc_link(get_string('moodledocslink')) ?>
         </p>
